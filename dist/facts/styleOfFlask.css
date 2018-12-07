@@ -1,0 +1,600 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 415px;
+    height: 242px;
+    background-image: url('../../img/img_flask/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*first flask*/
+.bowl1 {
+    width: 143px;
+    height: 145px;
+    background: url('../../img/img_flask/test-tubes.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 21.3px;
+    left: 3px;
+}
+
+.shadowFlask1 {
+    background: url('../../img/img_flask/test-tubes_shadow.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 143px;
+    height: 145px;
+    top: 22px;
+    left: 3px;
+    opacity: 1;
+}
+
+
+/*water circle*/
+
+.bowl1 .inner1 {
+    border-radius: 50%;
+    width: 85px;
+    height: 88px;
+    position: relative;
+    top: -39px;
+    left: 11px;
+    z-index: 3;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*wave on the circle water*/
+.bowl1 .waveShape1 {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+    width: 300px;
+    height: 150px;
+    fill: #ffffff;
+}
+
+/*shadow top for circle*/
+.bowl1 .inner12 {
+    border-radius: 50%;
+    width: 93px;
+    height: 88px;
+    position: relative;
+    top: 48px;
+    left: 11px;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*wave for top circle shadow */
+.bowl1 .waveShape12 {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2.5s;
+    width: 300px;
+    height: 150px;
+    fill: #0000000f;
+}
+
+/*shadow right for circle*/
+.bowl1 .inner1Right {
+    border-radius: 50%;
+    width: 93px;
+    height: 88px;
+    position: relative;
+    top: -127px;
+    left: 11px;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.bowl1 .waveShape1Right {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+    width: 300px;
+    height: 150px;
+    fill: #00000026;
+}
+
+
+/*анімація заповнення*/
+
+.bowl1 .fill1 {
+    -webkit-animation-name: fillAction;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+
+
+
+
+@-webkit-keyframes fillAction {
+    0% {
+        -webkit-transform: translate(0, 88px);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 35px);
+    }
+}
+
+@-webkit-keyframes waveAction {
+    0% {
+        -webkit-transform: translate(-150px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+/*trapezoid*/
+.bowl2 {
+    position: relative;
+    width: 199px;
+    height: 159px;
+    top: 19px;
+    left: -2px;
+    background: url('../../img/img_flask/test-tubes2.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+}
+
+.shadowFlask2 {
+    background: url('../../img/img_flask/test-tubes2_shadow.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 199px;
+    height: 159px;
+    top: 19px;
+    left: 142px;
+    opacity: 0.6;
+}
+
+
+/*water for trapezoid*/
+
+.bowl2 .inner2 {
+    width: 114px;
+    height: 58px;
+    position: relative;
+    top: 25px;
+    left: 20px;
+    z-index: 3;
+    -webkit-border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 24% 31% 31% / 67% 84% 18% 18%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*wave for trapezoid*/
+.bowl2 .waveShape2 {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2.5s;
+    width: 300px;
+    height: 150px;
+    fill: #fafc9d;
+}
+
+/*top shadow for trapezoid*/
+.bowl2 .inner22 {
+
+    width: 116px;
+    height: 60px;
+    position: relative;
+    top: 83px;
+    left: 24px;
+    z-index: 1;
+    -webkit-border-radius: 35% 32% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 32% 31% 31% / 67% 84% 18% 18%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+/*анімація заповнення*/
+
+.bowl2 .fill2 {
+    -webkit-animation-name: fillAction2;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+
+/*wave for top trapezoid shadow*/
+.bowl2 .waveShape22 {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 3.0s;
+    width: 350px;
+    height: 150px;
+    fill: #f7ea00;
+}
+
+/*shadow right for trapezoid*/
+.bowl2 .inner2Right {
+    width: 123px;
+    height: 58px;
+    position: relative;
+    top: -33px;
+    left: 20px;
+    z-index: 2;
+    -webkit-border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*wave shadow Right for trapezoid*/
+.bowl2 .waveShape2Right {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2.5s;
+    width: 300px;
+    height: 150px;
+    fill: #e6da04;
+}
+
+@-webkit-keyframes fillAction2 {
+    0% {
+        -webkit-transform: translate(0, 55px);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0px);
+    }
+}
+
+/*test tube*/
+.bowl3 {
+    top: 20px;
+    left: -19px;
+    position: relative;
+    width: 75px;
+    height: 145px;
+    background: url('../../img/img_flask/test-tubes3.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+}
+
+.shadowFlask3 {
+    background: url('../../img/img_flask/test-tubes3_shadow.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 75px;
+    height: 145px;
+    top: 20px;
+    left: 324px;
+    opacity: 0.5;
+}
+
+
+/*water for test tube*/
+
+.bowl3 .inner3 {
+
+    width: 22px;
+    height: 110px;
+    position: relative;
+    top: -83px;
+    left: 20px;
+    z-index: 3;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*wave for test tube*/
+.bowl3 .waveShape3 {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+    width: 300px;
+    height: 150px;
+    fill: #ffc943;
+}
+
+/*top shadow for test tube*/
+.bowl3 .inner32 {
+
+    width: 26px;
+    height: 107px;
+    position: relative;
+    top: 25px;
+    left: 20px;
+    z-index: 1;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*wave for top shadow*/
+.bowl3 .waveShape32 {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2.5s;
+    opacity: 0.5;
+    width: 300px;
+    height: 150px;
+    fill: #d09001;
+}
+
+/*right shadow for test tube*/
+
+.bowl3 .inner3Right {
+
+    width: 26px;
+    height: 110px;
+    position: relative;
+    top: -193px;
+    left: 20px;
+    z-index: 2;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-name: shadow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*wave for right shadow test tube*/
+.bowl3 .waveShape3Right {
+    -webkit-animation-name: waveAction;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+    width: 300px;
+    height: 150px;
+    fill: #c79c32;
+}
+
+/*анімація заповнення*/
+
+.bowl3 .fill3 {
+    -webkit-animation-name: fillAction3;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+
+
+
+@-webkit-keyframes fillAction3 {
+    0% {
+        -webkit-transform: translate(0, 110px);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 40px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        height: 225px;
+        background-image: url(../../img/img_flask/bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .bowl1 {
+        width: 125px;
+        height: 130px;
+        background: url(../../img/img_flask/test-tubes.png);
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 12.3px;
+        left: 3px;
+    }
+
+    .shadowFlask1 {
+        background: url(../../img/img_flask/test-tubes_shadow.png);
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 125px;
+        height: 130px;
+        top: 13px;
+        left: 3px;
+        opacity: 0.63;
+    }
+
+    .bowl1 .inner1 {
+        border-radius: 50%;
+        width: 80px;
+        top: -53px;
+        left: 8px;
+    }
+
+    .bowl1 .inner12 {
+        width: 85px;
+        top: 34px;
+        left: 8px;
+
+    }
+
+    .bowl1 .inner1Right {
+        border-radius: 50%;
+        width: 83px;
+        top: -141px;
+        left: 11px;
+
+    }
+
+    .bowl2 {
+        position: relative;
+        width: 165px;
+        height: 140px;
+        top: 12px;
+        left: -2px;
+        background: url(../../img/img_flask/test-tubes2.png);
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .shadowFlask2 {
+        background: url(../../img/img_flask/test-tubes2_shadow.png);
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 165px;
+        height: 140px;
+        top: 12px;
+        left: 123px;
+        opacity: 0.6;
+    }
+
+    .bowl2 .inner2 {
+        width: 86px;
+        height: 58px;
+        top: 10px;
+        left: 19px;
+    }
+
+    .bowl2 .inner22 {
+
+        width: 87px;
+        height: 60px;
+        top: 68px;
+        left: 23px;
+
+
+    }
+
+    .bowl2 .inner2Right {
+        width: 97px;
+        height: 58px;
+        top: -48px;
+        left: 19px;
+    }
+
+    .bowl3 {
+        top: 13px;
+        left: -19px;
+        position: relative;
+        width: 70px;
+        height: 131px;
+        background: url(../../img/img_flask/test-tubes3.png);
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .shadowFlask3 {
+        background: url(../../img/img_flask/test-tubes3_shadow.png);
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 75px;
+        height: 145px;
+        top: -3px;
+        left: 271px;
+        opacity: 0.5;
+    }
+
+    .bowl3 .inner3 {
+        width: 23px;
+        height: 110px;
+        top: -94px;
+        left: 16px;
+    }
+
+    .bowl3 .inner32 {
+
+        width: 27px;
+        height: 107px;
+        top: 14px;
+        left: 16px;
+
+    }
+
+    .bowl3 .inner3Right {
+
+        width: 27px;
+        height: 110px;
+        top: -204px;
+        left: 16px;
+
+    }
+}
