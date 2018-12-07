@@ -44,21 +44,21 @@
     left: 11px;
     z-index: 3;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /*wave on the circle water*/
 .bowl1 .waveShape1 {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
     width: 300px;
     height: 150px;
     fill: #ffffff;
@@ -74,24 +74,25 @@
     left: 11px;
     z-index: 1;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /*wave for top circle shadow */
 .bowl1 .waveShape12 {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2.5s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
     width: 300px;
     height: 150px;
-    fill: #0000000f;
+    fill: #000;
+    opacity: 0.06;
 }
 
 /*shadow right for circle*/
@@ -104,57 +105,54 @@
     left: 11px;
     z-index: 2;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 .bowl1 .waveShape1Right {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
     width: 300px;
     height: 150px;
-    fill: #00000026;
+    fill: #000;
+    opacity: 0.15;
 }
 
 
 /*анімація заповнення*/
 
 .bowl1 .fill1 {
-    -webkit-animation-name: fillAction;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    animation-name: fillAction;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
-
-
-
-
-@-webkit-keyframes fillAction {
+@keyframes fillAction {
     0% {
-        -webkit-transform: translate(0, 88px);
+        transform: translate(0, 88px);
     }
 
     100% {
-        -webkit-transform: translate(0, 35px);
+        transform: translate(0, 35px);
     }
 }
 
-@-webkit-keyframes waveAction {
+@keyframes waveAction {
     0% {
-        -webkit-transform: translate(-150px, 0);
+        transform: translate(-150px, 0);
     }
 
     100% {
-        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
 
@@ -195,21 +193,21 @@
     -webkit-border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
     border-radius: 35% 24% 31% 31% / 67% 84% 18% 18%;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /*wave for trapezoid*/
 .bowl2 .waveShape2 {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2.5s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
     width: 300px;
     height: 150px;
     fill: #fafc9d;
@@ -224,36 +222,36 @@
     top: 83px;
     left: 24px;
     z-index: 1;
-    -webkit-border-radius: 35% 32% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 32% 31% 31% / 67% 84% 18% 18%;
     border-radius: 35% 32% 31% 31% / 67% 84% 18% 18%;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 
 }
 
 /*анімація заповнення*/
 
 .bowl2 .fill2 {
-    -webkit-animation-name: fillAction2;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    animation-name: fillAction2;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 
 /*wave for top trapezoid shadow*/
 .bowl2 .waveShape22 {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 3.0s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3.0s;
     width: 350px;
     height: 150px;
     fill: #f7ea00;
@@ -267,36 +265,36 @@
     top: -33px;
     left: 20px;
     z-index: 2;
-    -webkit-border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
+    border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
     border-radius: 35% 34% 31% 31% / 67% 84% 18% 18%;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /*wave shadow Right for trapezoid*/
 .bowl2 .waveShape2Right {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2.5s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
     width: 300px;
     height: 150px;
     fill: #e6da04;
 }
 
-@-webkit-keyframes fillAction2 {
+@keyframes fillAction2 {
     0% {
-        -webkit-transform: translate(0, 55px);
+       transform: translate(0, 55px);
     }
 
     100% {
-        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
     }
 }
 
@@ -338,21 +336,21 @@
     border-bottom-left-radius: 58px;
     border-bottom-right-radius: 58px;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /*wave for test tube*/
 .bowl3 .waveShape3 {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
     width: 300px;
     height: 150px;
     fill: #ffc943;
@@ -370,21 +368,21 @@
     border-bottom-left-radius: 58px;
     border-bottom-right-radius: 58px;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /*wave for top shadow*/
 .bowl3 .waveShape32 {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2.5s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
     opacity: 0.5;
     width: 300px;
     height: 150px;
@@ -404,21 +402,21 @@
     border-bottom-left-radius: 58px;
     border-bottom-right-radius: 58px;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-animation-name: shadow;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    animation-name: shadow;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 /*wave for right shadow test tube*/
 .bowl3 .waveShape3Right {
-    -webkit-animation-name: waveAction;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 2s;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
     width: 300px;
     height: 150px;
     fill: #c79c32;
@@ -427,23 +425,23 @@
 /*анімація заповнення*/
 
 .bowl3 .fill3 {
-    -webkit-animation-name: fillAction3;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-    -webkit-animation-duration: 4s;
-    -webkit-animation-fill-mode: forwards;
+    animation-name: fillAction3;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 
 
 
-@-webkit-keyframes fillAction3 {
+@keyframes fillAction3 {
     0% {
-        -webkit-transform: translate(0, 110px);
+        transform: translate(0, 110px);
     }
 
     100% {
-        -webkit-transform: translate(0, 40px);
+        transform: translate(0, 40px);
     }
 }
 
