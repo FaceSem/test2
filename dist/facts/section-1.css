@@ -61,3 +61,8 @@ body {
       width: 280px; }
     .section-facts-1 .text-box {
       font-size: 14px; } }
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .section-facts-2 .block-1 .details-information{
+    margin:0px 0px 0px 0px;
+  }
+}

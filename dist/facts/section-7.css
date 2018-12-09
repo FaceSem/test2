@@ -178,7 +178,7 @@
       .section-facts-7 .block-2-section-7 .section-7-img-bckgr .pdng-tab-section {
         margin-top: 20px !important; }
       .section-facts-7 .block-2-section-7 .section-7-img-bckgr .tabcontent-section-7 {
-        width: 55%;
+        width: 360px;
         display: flex;
         flex-direction: column;
         min-height: 500px;
@@ -203,3 +203,10 @@
     height: 34px; }
   .section-facts-7 .row-element.position-fl P {
     font-size: 12px; } }
+
+
+@media screen and (max-width: 1100px) {
+  .section-facts-7 .block-1-section-7 .text-block-section-7 .section-7-block-buffer-2 .line-to-block .text-to-number{
+    font-size: 11px;
+  }
+}

@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    
     $(".dropdown-btn").on("click", function () {
         var dropdown = $(".dropdown-content");
         if ($(".mobile").css("display") == "none") {
@@ -253,13 +255,16 @@ $(document).ready(function () {
  
 
 });
-    setInterval(function(){
-       $('.change-img').addClass('display-1');
-    },15000)
-    setInterval(function(){
-       $('.change-img').removeClass('display-1');
-    },16000)
+    setTimeout(function(){
+        $('.change-img').addClass('display-1');
+    }, 14900)
 
+    setInterval(function(){
+        setTimeout(function(){
+            $('.change-img').addClass('display-1');
+        }, 14900)
+        $('.change-img').removeClass('display-1');
+     },15000)
    
     setInterval(function(){
         $('.change-hex').addClass('display-1');

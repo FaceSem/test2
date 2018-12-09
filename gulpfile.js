@@ -14,15 +14,9 @@ gulp.task('default', function() {
 });
 
 
-gulp.task('default', ['watch', 'reload', 'build-css']);
+gulp.task('default', ['watch', 'reload']);
 
 
-gulp.task('build-css', function() {
-  return gulp.src("css/facts/*.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("dist/facts"))
-        .pipe(browserSync.stream());
-});
 
 
 gulp.task("reload", function(){
@@ -38,5 +32,4 @@ gulp.task('watch', function() {
     }
   })
   gulp.watch('*.html',['reload']);
-  gulp.watch('css//**/*.scss', ['build-css']);
 });

@@ -3,6 +3,7 @@
   .section-facts-5 .block-1-section-5 .text-block {
     display: flex;
     flex-direction: row;
+    padding-top: 60px;
     padding-bottom: 13%;
     background-color: #eff2f6;
     background-image: -webkit-linear-gradient(86deg, #eff2f6 15%, #F6F9FF 6%); }
@@ -12,6 +13,15 @@
       width: 530px;
       margin-top: -70px;
       margin-left: 10px; }
+      .section-facts-5.blue-line{
+        margin-left: 0px!important;
+      }
+      .section-facts-5 .blue-line{
+        margin-left: 0px!important;
+      }
+      .section-facts-5 .text-block-tab p{
+        width: 100%!important;
+      }
       .section-facts-5 .block-1-section-5 .text-block .around-box .box-arnd-1,
       .section-facts-5 .block-1-section-5 .text-block .around-box .box-arnd-2,
       .section-facts-5 .block-1-section-5 .text-block .around-box .box-arnd-3,
@@ -90,10 +100,9 @@
       flex-direction: row; }
       .section-facts-5 .block-2-section-5 .text-block-tab .tab-box-text {
         font-family: 'Open Sans';
-        word-spacing: 7px;
         color: #505050;
-        font-weight: 500;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 15px;
         margin: 5% 5% 3% 5%; }
       .section-facts-5 .block-2-section-5 .text-block-tab .bubbles-right {
         position: relative; }
@@ -186,8 +195,7 @@
       word-spacing: 7px;
       color: #505050;
       font-weight: bold;
-      font-size: 14px;
-      margin-left: 5%; }
+      font-size: 14px; }
 
 @media screen and (max-width: 1024px) {
   .section-facts-5 .block-1-section-5 .text-block .row-element p {
@@ -248,3 +256,8 @@
         font-size: 14px; }
     .section-facts-5 .block-2-section-5 .text-block-tab:nth-child(2) table th {
       font-size: 14px; } }
+@media screen and (min-width: 1440px) and (max-width: 1920px){
+  .section-facts-5 .block-1-section-5 .text-block .around-box{ 
+    margin-left: 120px;
+  }
+}

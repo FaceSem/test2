@@ -2,6 +2,7 @@
   padding-top: 10%; }
   .section-facts-4 .text-block {
     display: flex;
+    padding-top: 50px;
     flex-direction: row;
     background-color: #eefff0;
     padding-bottom: 5%; }

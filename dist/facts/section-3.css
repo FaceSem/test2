@@ -5,18 +5,24 @@
 .section-facts-3 .text-block {
     display: flex;
     flex-direction: row;
-}
+    padding-top: 50px;
 
+}
+@media screen and  (min-width: 1520px) (max-width: 1920px) {
+    .section-facts-3  .discover-btn {
+        margin: 30px 350px 30px 0px!important;
+    }
+}
 .section-facts-3 .text-block .row-element {
     position: relative;
 }
 
 .section-facts-3 .text-block .row-element p {
-    margin: 5% 5% 3% 10%;
+    margin-left: 10%;
 }
 
-.section-facts-3 .text-block .row-element .bgrn-section-3 {
-    background-color: #F6F9FF;
+.section-facts-3  .bgrn-section-3 {
+    background-color: #eefff0;
     padding-bottom: 10%;
 }
 /*second pulse*/
@@ -73,11 +79,21 @@
 }
 
 .section-facts-3 .text-block .circle-animation-1 {
-    top: 20px;
+    top: -25px;
     position: absolute;
     left: 105px;
 }
-
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+    .section-facts-3 .text-block .circle-animation-1 {
+        top: 20px;
+    }
+    
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+   .section-facts-3 .text-block .circle-animation-1 .brg-technol p{
+        left: 10px;
+    } 
+}
 .section-facts-3 .text-block .circle-animation-1 .img-1-animation-sec-3 {
     width: 170px;
 }
@@ -93,7 +109,7 @@
 .section-facts-3 .text-block .circle-animation-1 .brg-technol p {
     position: absolute;
     top: 55px;
-    left: -5px;
+    left: 15px;
     font-weight: bold;
     text-align: center;
     color: #4da8f2;
